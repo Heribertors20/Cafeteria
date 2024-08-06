@@ -1,0 +1,179 @@
+/* Estilos para los enlaces desactivados en la barra de navegación */
+.nav-link.disabled {
+    color: #0d0d0d;
+    font-weight: bold;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/* Estilos para la sección de información */
+.info {
+    background-color: rgba(112, 102, 79, 0.767);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info span {
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-family: 'Edu AU', sans-serif;
+    text-align: justify;
+}
+
+/* Estilos para la sección de modales */
+.modals {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.modals .col-md-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.img-thumbnail {
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para los modales */
+.modal-content {
+    background-color: #a98f62;
+    border-radius: 10px;
+    border: none;
+}
+
+.modal-header {
+    background-color: #a98f62;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-footer {
+    background-color: #a98f62;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.modal-footer button {
+    background-color: red;
+    color: white;
+}
+
+.modal-footer button:hover {
+    background-color: rgb(234, 136, 136);
+    border-color: black;
+}
+
+.modal-body {
+    padding: 20px;
+    text-align: justify;
+}
+
+.modal-body img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.modal-body p {
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Estilo para las imágenes dentro del modal */
+.modal-img {
+    width: 300px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+    .info {
+        padding: 18px;
+        max-width: 700px;
+    }
+
+    .info span {
+        font-size: 1.3rem;
+    }
+
+    .modal-img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .info {
+        padding: 16px;
+        max-width: 600px;
+    }
+
+    .info span {
+        font-size: 1.2rem;
+    }
+
+    .modal-img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        padding: 14px;
+        max-width: 500px;
+    }
+
+    .info span {
+        font-size: 1.1rem;
+    }
+
+    .modal-img {
+        width: 150px;
+    }
+
+    .modal-body {
+        padding: 15px;
+    }
+
+    .modal-body p {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .info {
+        padding: 12px;
+        max-width: 400px;
+    }
+
+    .info span {
+        font-size: 1rem;
+    }
+
+    .modal-img {
+        width: 120px;
+    }
+
+    .modal-body {
+        padding: 10px;
+    }
+
+    .modal-body p {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,58 @@
+.modals {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.modals .col-md-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.img-thumbnail {
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.modal-header {
+    justify-content: center;
+    width: 100%;
+}
+
+.modal-header h5 {
+    color: white;
+}
+
+.modal-body {
+    background-color: transparent;
+}
+
+table{
+    background-color:rgba(0, 0, 0, 0.393);
+    color: white;
+}
+
+.modal-footer button {
+    background-color: red;
+}
+
+.modal-footer button:hover {
+    background-color: rgb(234, 136, 136);
+    border-color: black;
+}
+
+.modal-content {
+    background-image: url("../imagenes/menu.jpeg");
+}
+
+.nav-link.disabled {
+    color: #000000;
+    font-weight: bold;
+    pointer-events: none; 
+    cursor: not-allowed; 
+}

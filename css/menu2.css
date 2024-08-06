@@ -1,0 +1,73 @@
+/* menu2.css */
+
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+}
+
+/* Tarjetas de producto */
+.product-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+    max-height: 250px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .product-card {
+        min-height: 140px;
+        max-height: 230px;
+    }
+}
+
+@media (max-width: 992px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .product-card {
+        min-height: 130px;
+        max-height: 210px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .product-card {
+        min-height: 120px;
+        max-height: 190px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .product-card {
+        min-height: 110px;
+        max-height: 170px;
+    }
+}
